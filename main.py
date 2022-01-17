@@ -34,7 +34,7 @@ st.set_page_config(
 
 st.set_option('deprecation.showPyplotGlobalUse', False)
 
-st.sidebar.markdown('<h1 style="margin-left:8%; color:	#FF9933 ">AI For Road Safety In Hyderabad </h1>',
+st.sidebar.markdown('<h1 style="margin-left:8%; color:	#000080 ">AI For Road Safety In Hyderabad </h1>',
                     unsafe_allow_html=True)
 
 add_selectbox = st.sidebar.radio(
