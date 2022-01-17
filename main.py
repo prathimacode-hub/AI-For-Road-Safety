@@ -19,8 +19,6 @@ from geopy.extra.rate_limiter import RateLimiter
 from PIL import Image
 from streamlit_folium import folium_static
 from dateutil.relativedelta import relativedelta
-from data_collection import *
-from predict import *
 import seaborn as sns
 import matplotlib as mpl
 import matplotlib.pyplot as plt
