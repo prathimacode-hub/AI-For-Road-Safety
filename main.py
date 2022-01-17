@@ -149,7 +149,7 @@ elif add_selectbox == 'Team':
    
     st.markdown('• <a href="">Nikhil Shrestha</a>',
                 unsafe_allow_html=True)
-      st.markdown('• <a href="">Bhushan Choughule</a>',
+    st.markdown('• <a href="">Bhushan Choughule</a>',
                 unsafe_allow_html=True)
     st.markdown('• <a href="https://www.linkedin.com/in/tanisha-banik-04b511173/">Tanisha Banik</a>',
                 unsafe_allow_html=True)
