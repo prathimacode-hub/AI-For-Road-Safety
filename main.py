@@ -145,7 +145,7 @@ elif add_selectbox == 'Team':
     st.subheader('COLLABORATORS')
 
    
-    st.markdown('• <a href="">Nikhil Shrestha</a>',
+    st.markdown('• <a href="https://www.linkedin.com/in/nikhilshreshta/">Nikhil Shrestha</a>',
                 unsafe_allow_html=True)
     st.markdown('• <a href="">Bhushan Choughule</a>',
                 unsafe_allow_html=True)
@@ -153,21 +153,25 @@ elif add_selectbox == 'Team':
                 unsafe_allow_html=True)
     st.markdown('• <a href="https://www.linkedin.com/in/prathima-kadari/">Prathima Kadari</a>',
                 unsafe_allow_html=True)
-    st.markdown('• <a href="">Shreya Chawla</a>',
+    st.markdown('• <a href="https://www.linkedin.com/in/shreyachawla1998/">Shreya Chawla</a>',
+                unsafe_allow_html=True)
+    st.markdown('• <a href="https://www.linkedin.com/in/vamsi-chittoor-331b80189/">Chittoor Vamsi</a>',
+                unsafe_allow_html=True)
+    st.markdown('• <a href="https://www.linkedin.com/in/harshaljhirpara/">Harshal Hirpara</a>',
+                unsafe_allow_html=True)
+    st.markdown('• <a href="https://www.linkedin.com/in/viveklalex/">Vivek L. Alex</a>',
+                unsafe_allow_html=True)
+    st.markdown('• <a href="https://www.linkedin.com/in/goli-tarun/">Tarun Goli</a>',
+                unsafe_allow_html=True)
+     st.markdown('• <a href="https://www.linkedin.com/in/pawani-morum-42788521/">Pawani Kumari Morum</a>',
                 unsafe_allow_html=True)
     st.markdown('• <a href="">Hardik</a>',
                 unsafe_allow_html=True)
-    st.markdown('• <a href="">Tarun Goli</a>',
-                unsafe_allow_html=True)
-    st.markdown('• <a href="">Chittoor Vamsi</a>',
-                unsafe_allow_html=True)
-    st.markdown('• <a href="">Harshal Hirpara</a>',
-                unsafe_allow_html=True)
-    st.markdown('• <a href="">Pawan Roy</a>',
+    st.markdown('• <a href="https://www.linkedin.com/in/jayra-gaile-ortiz/">Jayra Gaile Ortiz</a>',
                 unsafe_allow_html=True)
     
 
     st.subheader('PROJECT MANAGER')
 
-    st.markdown('• <a href="">Yahya</a>', unsafe_allow_html=True)
+    st.markdown('• <a href="https://www.linkedin.com/in/shaik-muhammad-yahiya/">Muhammad Yahiya</a>', unsafe_allow_html=True)
                 
