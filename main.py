@@ -165,7 +165,7 @@ elif add_selectbox == 'Team':
                 unsafe_allow_html=True)
     st.markdown('• <a href="https://www.linkedin.com/in/pawani-morum-42788521/">Pawani Kumari Morum</a>',
                 unsafe_allow_html=True)
-    st.markdown('• <a href="">Hardik</a>',
+    st.markdown('• <a href="https://www.linkedin.com/in/hardik-tejani/">Hardik Tejani</a>',
                 unsafe_allow_html=True)
     st.markdown('• <a href="https://www.linkedin.com/in/jayra-gaile-ortiz/">Jayra Gaile Ortiz</a>',
                 unsafe_allow_html=True)
