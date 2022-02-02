@@ -26,6 +26,8 @@ import time
 import geemap
 from predict_label import final_prep_prop
 
+import nltk
+
 nltk.download('punkt')
 nltk.download('wordnet')
 nltk.download('averaged_perceptron_tagger')
