@@ -37,3 +37,4 @@ spacy==2.2.4
 statsmodels==0.10.2
 xgboost==0.90
 nltk==3.2.5
+gensim==3.6.0
