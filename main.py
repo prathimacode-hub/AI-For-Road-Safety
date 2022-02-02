@@ -37,6 +37,8 @@ from predict_label import regex_cleaning, lemmatization, final_prep_prop
 
 #text = "#India has the largest number of ppl dying in road accidents. That + 99 more things to debate before we vote http://t.co/zkxbONv850"
 
+text = "@ndtv In India, most of the ambulances enter NO ENTRY roads and sometimes accidents occur - putting other road users to great risk."
+
 st.set_page_config(
     page_title="AI For Road Safety In Hyderabad",
     layout="wide",
