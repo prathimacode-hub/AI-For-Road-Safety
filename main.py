@@ -35,7 +35,7 @@ nltk.download('stopwords')
 nltk.download('words')
 from predict_label import regex_cleaning, lemmatization, final_prep_prop
 
-text = "#India has the largest number of ppl dying in road accidents. That + 99 more things to debate before we vote http://t.co/zkxbONv850"
+#text = "#India has the largest number of ppl dying in road accidents. That + 99 more things to debate before we vote http://t.co/zkxbONv850"
 
 st.set_page_config(
     page_title="AI For Road Safety In Hyderabad",
@@ -122,12 +122,12 @@ elif add_selectbox == 'Features':
 elif add_selectbox == 'Road Safety':   
     
     st.subheader('ROAD SAFETY')    
-    area = st.text_input('Enter the Text here', 'areas')
+    area = st.text_input('Enter the Text here', '#India has the largest number of ppl dying in road accidents. That + 99 more things to debate before we vote http://t.co/zkxbONv850')
 
-    text_input = st.text("text")
+#     text_input = st.text("text")
     if st.button('submit'):
         st.write("Button pressed")
-        st.write(final_prep_prop(text_input))
+        st.write(final_prep_prop(area))
     else:
         st.write("nothing")
     
