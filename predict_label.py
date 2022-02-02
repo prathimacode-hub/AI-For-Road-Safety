@@ -101,17 +101,19 @@ def lemmatization(texts, allowed_postags=["NOUN", "ADJ", "VERB", "ADV"]):
   
   return [" ".join(new_text)]
 def final_prep_prop(text):
-    
+
     file = open("tfidf_object.pkl",'rb')
     tf_idf = pickle.load(file)
     file = open("xgb_reg.pkl",'rb')
     model = pickle.load(file)
 
     reg_cl = regex_cleaning(text)
+
     final_text = lemmatization(reg_cl)
-    tf_idf.transform(final_text)
+
+    vec_text =tf_idf.transform(final_text)
     pred = model.predict(vec_text)
-    return pred
+    return pred[0]
 
 reg_cl = regex_cleaning(text)
 final_text = lemmatization(reg_cl)
