@@ -24,7 +24,9 @@ import matplotlib as mpl
 import matplotlib.pyplot as plt
 import time
 import geemap
+from predict_label import final_prep_prop
 
+text = "#India has the largest number of ppl dying in road accidents. That + 99 more things to debate before we vote http://t.co/zkxbONv850"
 
 st.set_page_config(
     page_title="AI For Road Safety In Hyderabad",
@@ -111,8 +113,14 @@ elif add_selectbox == 'Features':
 elif add_selectbox == 'Road Safety':   
     
     st.subheader('ROAD SAFETY')    
+    text_input = st.text("text")
+    if st.button('submit'):
+        st.write("Button pressed")
+        st.write(final_prep_prop(text_input))
+    else:
+        st.write("nothing")
     
-        
+
 elif add_selectbox == 'Output Visualizations':
     
     st.subheader('VISUALIZATIONS')
