@@ -38,7 +38,7 @@ import pandas as pd
 import re
 import unicodedata
 import spacy
-import gensim
+# import gensim
 
 text = "#India has the largest number of ppl dying in road accidents. That + 99 more things to debate before we vote http://t.co/zkxbONv850"
 
@@ -79,15 +79,15 @@ def regex_cleaning(phrase):
   return phrase_final 
 
 
-def gen_words(text):
-  final = []
-  # for text in texts:
-  new = gensim.utils.simple_preprocess(text, deacc=True)
-  for word in new:
-    if len(word) > 3:
-      final.append(word)
-  # print(final)
-  return (" ".join(final))
+# def gen_words(text):
+#   final = []
+#   # for text in texts:
+#   new = gensim.utils.simple_preprocess(text, deacc=True)
+#   for word in new:
+#     if len(word) > 3:
+#       final.append(word)
+#   # print(final)
+#   return (" ".join(final))
 
 def lemmatization(texts, allowed_postags=["NOUN", "ADJ", "VERB", "ADV"]):
   nlp = spacy.load("en_core_web_sm")
@@ -100,6 +100,7 @@ def lemmatization(texts, allowed_postags=["NOUN", "ADJ", "VERB", "ADV"]):
       new_text.append(token.lemma_)
   
   return [" ".join(new_text)]
+
 def final_prep_prop(text):
 
     file = open("tfidf_object.pkl",'rb')
