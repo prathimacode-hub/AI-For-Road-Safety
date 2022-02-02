@@ -52,7 +52,7 @@ st.sidebar.markdown('<h1 style="margin-left:8%; color:	#000080 ">AI For Road Saf
 
 add_selectbox = st.sidebar.radio(
     "",
-    ("Home", "About", "Features", "Road Safety", "Visualizations", "Conclusion", "Team")
+    ("Home", "About", "Features", "NLP-Label Generator", "Visualizations", "Conclusion", "Team")
 )
 
 if add_selectbox == 'Home':
