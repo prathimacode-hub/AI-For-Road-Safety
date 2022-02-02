@@ -121,14 +121,13 @@ elif add_selectbox == 'Features':
     st.markdown('• ', unsafe_allow_html=True)
     
     
-elif add_selectbox == 'Road Safety':   
+elif add_selectbox == 'NLP - Label Generator':   
     
     st.subheader('ROAD SAFETY')    
     area = st.text_input('Enter the Text here', '#India has the largest number of ppl dying in road accidents. That + 99 more things to debate before we vote http://t.co/zkxbONv850')
 
 #     text_input = st.text("text")
     if st.button('submit'):
-        st.write("Button pressed")
         st.write(final_prep_prop(area))
     else:
         st.write("nothing")
