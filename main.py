@@ -52,7 +52,7 @@ st.sidebar.markdown('<h1 style="margin-left:8%; color:	#000080 ">AI For Road Saf
 
 add_selectbox = st.sidebar.radio(
     "",
-    ("Home", "About", "Features", "Label Generator", "Visualizations", "Conclusion", "Team")
+    ("Home", "About", "Features", "Natural Language Processing", "Visualizations", "Conclusion", "Team")
 )
 
 if add_selectbox == 'Home':
@@ -121,9 +121,9 @@ elif add_selectbox == 'Features':
     st.markdown('• ', unsafe_allow_html=True)
     
     
-elif add_selectbox == 'Label Generator':   
+elif add_selectbox == 'Natural Language Processing':   
     
-    st.subheader('GENERATE THE LABEL')    
+    st.subheader('LABEL GENERATOR')    
     area = st.text_input('Enter the Text here', '#India has the largest number of ppl dying in road accidents. That + 99 more things to debate before we vote http://t.co/zkxbONv850')
 
 #     text_input = st.text("text")
@@ -132,6 +132,16 @@ elif add_selectbox == 'Label Generator':
     else:
         st.write("nothing")
     
+    
+    st.subheader('SENTIMENT ANALYSIS')    
+#     area = st.text_input('Enter the Text here', '#India has the largest number of ppl dying in road accidents. That + 99 more things to debate before we vote http://t.co/zkxbONv850')
+
+# #     text_input = st.text("text")
+#     if st.button('submit'):
+#         st.write(final_prep_prop(area))
+#     else:
+#         st.write("nothing")
+        
 
 elif add_selectbox == 'Output Visualizations':
     
