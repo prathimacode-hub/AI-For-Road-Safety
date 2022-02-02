@@ -123,7 +123,7 @@ elif add_selectbox == 'Features':
     
 elif add_selectbox == 'NLP - Label Generator':   
     
-    st.subheader('ROAD SAFETY')    
+    st.subheader('GENERATE THE LABEL')    
     area = st.text_input('Enter the Text here', '#India has the largest number of ppl dying in road accidents. That + 99 more things to debate before we vote http://t.co/zkxbONv850')
 
 #     text_input = st.text("text")
