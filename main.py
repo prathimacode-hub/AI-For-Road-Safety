@@ -52,7 +52,7 @@ st.sidebar.markdown('<h1 style="margin-left:8%; color:	#000080 ">AI For Road Saf
 
 add_selectbox = st.sidebar.radio(
     "",
-    ("Home", "About", "Features", "NLP-Label Generator", "Visualizations", "Conclusion", "Team")
+    ("Home", "About", "Features", "Road Safety", "Visualizations", "Conclusion", "Team")
 )
 
 if add_selectbox == 'Home':
@@ -121,7 +121,7 @@ elif add_selectbox == 'Features':
     st.markdown('• ', unsafe_allow_html=True)
     
     
-elif add_selectbox == 'NLP - Label Generator':   
+elif add_selectbox == 'Road Safety':   
     
     st.subheader('GENERATE THE LABEL')    
     area = st.text_input('Enter the Text here', '#India has the largest number of ppl dying in road accidents. That + 99 more things to debate before we vote http://t.co/zkxbONv850')
