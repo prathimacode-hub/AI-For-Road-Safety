@@ -122,6 +122,8 @@ elif add_selectbox == 'Features':
 elif add_selectbox == 'Road Safety':   
     
     st.subheader('ROAD SAFETY')    
+    area = st.text_input('Enter the Text here', 'areas')
+
     text_input = st.text("text")
     if st.button('submit'):
         st.write("Button pressed")
