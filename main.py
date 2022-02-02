@@ -26,6 +26,13 @@ import time
 import geemap
 from predict_label import final_prep_prop
 
+nltk.download('punkt')
+nltk.download('wordnet')
+nltk.download('averaged_perceptron_tagger')
+nltk.download('stopwords')
+nltk.download('words')
+from predict_label import regex_cleaning, lemmatization, final_prep_prop
+
 text = "#India has the largest number of ppl dying in road accidents. That + 99 more things to debate before we vote http://t.co/zkxbONv850"
 
 st.set_page_config(
