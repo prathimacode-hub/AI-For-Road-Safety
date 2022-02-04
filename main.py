@@ -46,12 +46,12 @@ import pygame
 from pygame import mixer
 
 #Initializing variables for head pose estimation and Gaze detection
-mixer.init()
-voice_left = mixer.Sound('left.wav')
-voice_right = mixer.Sound('Right.wav')
-voice_down = mixer.Sound('down.wav')
-eyes_blink= mixer.Sound('eyes_blink.wav')
-yawn = mixer.Sound('Yawning.wav')
+# mixer.init()
+# voice_left = mixer.Sound('left.wav')
+# voice_right = mixer.Sound('Right.wav')
+# voice_down = mixer.Sound('down.wav')
+# eyes_blink= mixer.Sound('eyes_blink.wav')
+# yawn = mixer.Sound('Yawning.wav')
 
 counter_right=0
 counter_down=0
