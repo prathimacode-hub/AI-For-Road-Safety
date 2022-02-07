@@ -100,8 +100,10 @@ elif add_selectbox == 'About':
     st.subheader('ABOUT THE PROJECT')
 
     st.markdown('<h4>Project Goals</h4>', unsafe_allow_html=True)
-    st.markdown('• ', unsafe_allow_html=True) 
-    st.markdown('• ', unsafe_allow_html=True) 
+    st.markdown('• Analyzing Road accidents data using Web Scraping from public databases, newspapers, web pages like Google News, Regional and National Newspapers and get a chart of accident prone areas in Hyderabad according to previous stats. etc. 2. Build an AI-Based method based on Machine Learning algorithms & Deep Learning to detect traffic accidents in real-time with the use of traffic cameras with high degrees of precision.', unsafe_allow_html=True) 
+    st.markdown('• Build an NLP model for Label Generator which detects the kind of statement that it is using keywords mentioned in a data and Sentiment Analysis to  ', unsafe_allow_html=True) 
+    st.markdown('• Build a Deep Learning-based solution for the driver monitoring system by studying a person’s posture and body movements, intelligent interior vehicle algorithms which can draw conclusions about a person’s alertness, attention and focus.', unsafe_allow_html=True) 
+    st.markdown('• A Web Application to predict the probability of an accident from input video and actions of the driver.', unsafe_allow_html=True) 
     
     st.markdown('<h4>Developments Made</h4>', unsafe_allow_html=True)
     st.markdown('• ',unsafe_allow_html=True)
@@ -147,17 +149,21 @@ elif add_selectbox == 'Natural Language Processing':
 elif add_selectbox == 'Output Visualizations':
     
     st.subheader('VISUALIZATIONS')
-
+    st.markdown('<h4>Analysis of Road Accidents Vs Areas</h4>', unsafe_allow_html=True)
+    st.image("Analysis_Of_Road_Accidents_Vs_Areas.png", width=500)
+    #st.markdown('<h4>Road Accidents Word Cloud</h4>', unsafe_allow_html=True)
+    #st.image("Road_Accidents_Word_Cloud_1.png", width=500)
+  
    
 elif add_selectbox == 'Conclusion':
 
     st.subheader('TECH STACK')
 
-    st.markdown('• Web Scraping - ', unsafe_allow_html=True)
-    st.markdown('• Data Wrangling & Pre-Processing - ', unsafe_allow_html=True)
-    st.markdown('• NLP Modelling - ', unsafe_allow_html=True) 
-    st.markdown('• Image Classification & Computer Vision Modelling - ', unsafe_allow_html=True) 
-    st.markdown('• Dashboard - Streamlit', unsafe_allow_html=True) 
+    st.markdown('• Web Scraping - Twitter, Youtube, Reddit, Google News & News Channels', unsafe_allow_html=True)
+    st.markdown('• Data Wrangling & Pre-Processing - Word Cloud, Exploratory Data Analysis on Road Accidents, Images Data Annotation', unsafe_allow_html=True)
+    st.markdown('• NLP Modelling - Label Generator & Sentiment Analysis', unsafe_allow_html=True) 
+    st.markdown('• Image Classification & Computer Vision Modelling - Eye Gaze Estimation, Drowsiness Detection, Yawn Detection, and Object Detection', unsafe_allow_html=True) 
+    st.markdown('• Dashboard - Streamlit & Docker', unsafe_allow_html=True) 
 
     st.subheader('PROJECT SUMMARY')
 
@@ -178,25 +184,25 @@ elif add_selectbox == 'Team':
    
     st.markdown('• <a href="https://www.linkedin.com/in/nikhilshreshta/">Nikhil Shrestha</a>',
                 unsafe_allow_html=True)
+    st.markdown('• <a href="https://www.linkedin.com/in/hardik-tejani/">Hardik Tejani</a>',
+                unsafe_allow_html=True)
+    st.markdown('• <a href="https://www.linkedin.com/in/harshaljhirpara/">Harshal Hirpara</a>',
+                unsafe_allow_html=True)
+    st.markdown('• <a href="https://www.linkedin.com/in/prathima-kadari/">Prathima Kadari</a>',
+                unsafe_allow_html=True)
     st.markdown('• <a href="https://www.linkedin.com/in/BhushanChougule/">Bhushan Chougule</a>',
                 unsafe_allow_html=True)
     st.markdown('• <a href="https://www.linkedin.com/in/tanisha-banik-04b511173/">Tanisha Banik</a>',
                 unsafe_allow_html=True)
-    st.markdown('• <a href="https://www.linkedin.com/in/prathima-kadari/">Prathima Kadari</a>',
-                unsafe_allow_html=True)
     st.markdown('• <a href="https://www.linkedin.com/in/shreyachawla1998/">Shreya Chawla</a>',
                 unsafe_allow_html=True)
-    st.markdown('• <a href="https://www.linkedin.com/in/vamsi-chittoor-331b80189/">Chittoor Vamsi</a>',
+    st.markdown('• <a href="https://www.linkedin.com/in/pawani-morum-42788521/">Pawani Kumari Morum</a>',
                 unsafe_allow_html=True)
-    st.markdown('• <a href="https://www.linkedin.com/in/harshaljhirpara/">Harshal Hirpara</a>',
+    st.markdown('• <a href="https://www.linkedin.com/in/vamsi-chittoor-331b80189/">Chittoor Vamsi</a>',
                 unsafe_allow_html=True)
     st.markdown('• <a href="https://www.linkedin.com/in/viveklalex/">Vivek L. Alex</a>',
                 unsafe_allow_html=True)
     st.markdown('• <a href="https://www.linkedin.com/in/goli-tarun/">Tarun Goli</a>',
-                unsafe_allow_html=True)
-    st.markdown('• <a href="https://www.linkedin.com/in/pawani-morum-42788521/">Pawani Kumari Morum</a>',
-                unsafe_allow_html=True)
-    st.markdown('• <a href="https://www.linkedin.com/in/hardik-tejani/">Hardik Tejani</a>',
                 unsafe_allow_html=True)
     st.markdown('• <a href="https://www.linkedin.com/in/jayra-gaile-ortiz/">Jayra Gaile Ortiz</a>',
                 unsafe_allow_html=True)
