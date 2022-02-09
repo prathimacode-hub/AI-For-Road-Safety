@@ -1,32 +1,6 @@
-import datetime
-import math
-import folium
-import geopandas as gpd
-import geopy
-import networkx as nx
-import joblib
-import osmnx as ox
-import shapely.wkt
-import pandas as pd
 import streamlit as st
-import streamlit.components.v1 as components
-import time
 import base64
-from branca.element import Figure
-from folium.features import DivIcon
-from geopy.geocoders import Nominatim
-from geopy.extra.rate_limiter import RateLimiter
-from PIL import Image
-from streamlit_folium import folium_static
-from dateutil.relativedelta import relativedelta
-import seaborn as sns
-import matplotlib as mpl
-import matplotlib.pyplot as plt
-import time
-import geemap
 from predict_label import final_prep_prop
-
-
 import nltk
 
 nltk.download('punkt')
@@ -34,7 +8,11 @@ nltk.download('wordnet')
 nltk.download('averaged_perceptron_tagger')
 nltk.download('stopwords')
 nltk.download('words')
-from predict_label import regex_cleaning, lemmatization, final_prep_prop
+from predict_label import regex_cleaning, word_2_vec_transform,  final_prep_prop, model_gensim
+import nltk
+nltk.download('vader_lexicon')
+from nltk.sentiment.vader import SentimentIntensityAnalyzer
+sentimentAnalyser = SentimentIntensityAnalyzer()
 
 #text = "#India has the largest number of ppl dying in road accidents. That + 99 more things to debate before we vote http://t.co/zkxbONv850"
 
@@ -126,34 +104,33 @@ elif add_selectbox == 'Features':
     
 elif add_selectbox == 'Natural Language Processing':   
     
-    st.subheader('LABEL GENERATOR')    
-    area = st.text_input('Enter the Text here', '#India has the largest number of ppl dying in road accidents. That + 99 more things to debate before we vote http://t.co/zkxbONv850')
+    st.subheader('LABEL & SENTIMENT GENERATOR ')    
+    area = st.text_input('Enter the Text here (more than 3 words)', '#India has the largest number of ppl dying in road accidents. That + 99 more things to debate before we vote http://t.co/zkxbONv850')
 
-#     text_input = st.text("text")
     if st.button('submit'):
-        st.write(final_prep_prop(area))
+        sentiment = "positive" if sentimentAnalyser.polarity_scores(area)['compound'] > 0.5 else "negative" 
+        label = final_prep_prop(area, model_gensim)
+        if label == 'complaints' and sentiment == 'positive':
+            st.write(f"Sentiment of Sentence: {sentiment} and Label of Sentence: General Information")
+        elif label == 'appreciation' and sentiment == 'negative':
+            st.write(f"Sentiment of Sentence: {sentiment} and Label of Sentence: disagreement")
+        else:
+            st.write(f"Sentiment of Sentence: {sentiment} and Label of Sentence: {label}")
     else:
         st.write("nothing")
     
-    
-    st.subheader('SENTIMENT ANALYSIS')    
-#     area = st.text_input('Enter the Text here', '#India has the largest number of ppl dying in road accidents. That + 99 more things to debate before we vote http://t.co/zkxbONv850')
-
-# #     text_input = st.text("text")
-#     if st.button('submit'):
-#         st.write(final_prep_prop(area))
-#     else:
-#         st.write("nothing")
-        
 
 elif add_selectbox == 'Output Visualizations':
     
     st.subheader('VISUALIZATIONS')
+    
     st.markdown('<h4>Analysis of Road Accidents Vs Areas</h4>', unsafe_allow_html=True)
     st.image("Analysis_Of_Road_Accidents_Vs_Areas.png", width=500)
-    #st.markdown('<h4>Road Accidents Word Cloud</h4>', unsafe_allow_html=True)
-    #st.image("Road_Accidents_Word_Cloud_1.png", width=500)
-  
+    st.markdown('<h4>Road Accidents Word Cloud Image1</h4>', unsafe_allow_html=True)
+    st.image("Road_Accidents_Word_Cloud_1.png", width=500)
+    st.markdown('<h4>Road Accidents Word Cloud Image2</h4>', unsafe_allow_html=True)
+    st.image("Road_Accidents_Word_Cloud_2.png", width=500)
+
    
 elif add_selectbox == 'Conclusion':
 
@@ -180,7 +157,6 @@ elif add_selectbox == 'Conclusion':
 elif add_selectbox == 'Team':
     
     st.subheader('COLLABORATORS')
-
    
     st.markdown('• <a href="https://www.linkedin.com/in/nikhilshreshta/">Nikhil Shrestha</a>',
                 unsafe_allow_html=True)
@@ -211,4 +187,5 @@ elif add_selectbox == 'Team':
     st.subheader('PROJECT MANAGER')
 
     st.markdown('• <a href="https://www.linkedin.com/in/shaik-muhammad-yahiya/">Muhammad Yahiya</a>', unsafe_allow_html=True)
-                
+            
+   
