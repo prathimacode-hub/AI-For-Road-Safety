@@ -126,9 +126,9 @@ elif add_selectbox == 'Visualizations':
     st.markdown('<h4>Analysis of Road Accidents Vs Areas</h4>', unsafe_allow_html=True)
     st.image("analysis_of_road_accidents_vs_areas.png", width=500)
     st.markdown('<h4>Road Accidents Word Cloud Image1</h4>', unsafe_allow_html=True)
-    st.image("road_accidents_word_cloud_1.png", width=400)
+    st.image("road_accidents_word_cloud_1.png", width=500)
     st.markdown('<h4>Road Accidents Word Cloud Image2</h4>', unsafe_allow_html=True)
-    st.image("road_accidents_word_cloud_2.png", width=400)
+    st.image("road_accidents_word_cloud_2.png", width=500)
 
    
 elif add_selectbox == 'Conclusion':
