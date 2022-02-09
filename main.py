@@ -8,7 +8,7 @@ nltk.download('wordnet')
 nltk.download('averaged_perceptron_tagger')
 nltk.download('stopwords')
 nltk.download('words')
-from predict_label import regex_cleaning, word_2_vec_transform,  final_prep_prop, model_gensim
+from predict_label import regex_cleaning, word_2_vec_transform, final_prep_prop, model_gensim
 import nltk
 nltk.download('vader_lexicon')
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
@@ -84,22 +84,20 @@ elif add_selectbox == 'About':
     st.markdown('• A Web Application to predict the probability of an accident from input video and actions of the driver.', unsafe_allow_html=True) 
     
     st.markdown('<h4>Developments Made</h4>', unsafe_allow_html=True)
-    st.markdown('• ',unsafe_allow_html=True)
-    st.markdown('• ',unsafe_allow_html=True)
-    st.markdown('• ',unsafe_allow_html=True)
-    st.markdown('• ',unsafe_allow_html=True)
-    st.markdown('• ',unsafe_allow_html=True)
-    st.markdown('• ',unsafe_allow_html=True)
-    st.markdown('• ',unsafe_allow_html=True)
+    st.markdown('• Analyzed Road accidents data using Web Scraping from public databases, newspapers, web pages like Google News, Regional and National Newspapers and get a chart of accident prone areas in Hyderabad according to previous stats.',unsafe_allow_html=True)
+    st.markdown('• Built an NLP model for that generates the Sentiment of a user text and adds a Label that predicts the kind of statement it is using keywords mentioned in the input.',unsafe_allow_html=True)
+    st.markdown('• Built a Deep Learning model for driver monitoring system that studies the body movements that drives distraction while driving and signals back with a voice message to provide an alert.',unsafe_allow_html=True)
+    st.markdown('• Initialized the Streamlit App and integrated the backend models to the application for users to visualize the analysis and check on with the results of the NLP models.',unsafe_allow_html=True)
+    st.markdown('• Generated a .exe (executable) file for model that depicts eye gaze estimation, drowsiness detection and yawn detection for it to be compiled on a local system directly. ',unsafe_allow_html=True)
+    st.markdown('• Deployed the Streamlit App into Cloud (Docker) by activating and pushing the code sucessfully.',unsafe_allow_html=True)
 
 
 elif add_selectbox == 'Features':
 
     st.subheader('FEATURES INVOLVED')
 
-    st.markdown('• ', unsafe_allow_html=True)
-    st.markdown('• ', unsafe_allow_html=True)
-    st.markdown('• ', unsafe_allow_html=True)
+    st.markdown('• Label & Sentiment Generator', unsafe_allow_html=True)
+    st.markdown('• Eye Gaze Estimation, Drowsiness Detection & Yawn Detection', unsafe_allow_html=True)
     
     
 elif add_selectbox == 'Natural Language Processing':   
@@ -147,10 +145,10 @@ elif add_selectbox == 'Conclusion':
 
     st.subheader('TECH STACK')
 
-    st.markdown('• Web Scraping - Twitter, Youtube, Reddit, Google News & News Channels', unsafe_allow_html=True)
-    st.markdown('• Data Wrangling & Pre-Processing - Word Cloud, Exploratory Data Analysis on Road Accidents, Images Data Annotation', unsafe_allow_html=True)
-    st.markdown('• NLP Modelling - Label Generator & Sentiment Analysis', unsafe_allow_html=True) 
-    st.markdown('• Image Classification & Computer Vision Modelling - Eye Gaze Estimation, Drowsiness Detection, Yawn Detection, and Object Detection', unsafe_allow_html=True) 
+    st.markdown('• Web Scraping - Twitter, Youtube, Reddit, Google News & News Channels & Road Accident Areas', unsafe_allow_html=True)
+    st.markdown('• Data Wrangling & Pre-Processing - Word Cloud, Exploratory Data Analysis on Road Accidents & Images Data Annotation', unsafe_allow_html=True)
+    st.markdown('• NLP Modelling - Label & Sentiment Generator', unsafe_allow_html=True) 
+    st.markdown('• Image Classification & Computer Vision Modelling - Eye Gaze Estimation, Drowsiness Detection & Yawn Detection', unsafe_allow_html=True) 
     st.markdown('• Dashboard - Streamlit & Docker', unsafe_allow_html=True) 
 
     st.subheader('PROJECT SUMMARY')
