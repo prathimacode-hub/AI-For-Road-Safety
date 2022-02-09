@@ -153,7 +153,7 @@ elif add_selectbox == 'Conclusion':
     
     st.subheader('CONCLUSION')
     
-    st.markdown('We have created a centralized web application to check on with the activities of the driver in real-time. This would aid in addressing the needs of a road safety arised immediately by instant alerting facility.', unsafe_allow_html=True)
+    st.markdown('We have created a Centralized WebApp to Ensure Road Safety by checking on with the activities of the driver and activating label generator using NLP with Streamlit & Docker.', unsafe_allow_html=True)
     
     
 elif add_selectbox == 'Team':
