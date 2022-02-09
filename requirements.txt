@@ -1,27 +1,11 @@
-pandas>=1.2.2
-streamlit_folium==0.4.0
-networkx==2.6.2
-geopy==2.2.0
-osmnx==1.1.1
-folium==0.12.1
-geopandas==0.9.0
-Pillow==8.3.1
-joblib==1.1.0
-python-dateutil==2.7.3
-geemap==0.11.0
-ipywidgets==7.6.5
-earthengine-api==0.1.293
-numpy==1.19.5
-matplotlib>=3.2.2
-# seaborn==0.11.2
-# scikit-learn==1.0.2
+# NLP
 
-## Nikhil
-en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-2.2.5/en_core_web_sm-2.2.5.tar.gz
+streamlit
+networkx==2.6.2
+
+# en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-2.2.5/en_core_web_sm-2.2.5.tar.gz
+
 Flask==1.1.4
-# matplotlib==3.2.2
-# matplotlib-inline==0.1.3
-# matplotlib-venn==0.11.6
 numba==0.51.2
 numpy==1.19.5
 optuna==2.10.0
@@ -35,14 +19,15 @@ sklearn==0.0
 sklearn-pandas==1.8.0
 spacy==2.2.4
 statsmodels==0.10.2
-xgboost==0.90
 nltk==3.2.5
-# gensim==3.6.0
+gensim==3.6.0
 
 #libraries for Head pose estimation and gaze detection
-mediapipe==0.8.3.1
-opencv-python-headless==4.5.1.48
-opencv-python==4.5.1.48
-python-math==0.0.1
-pyttsx3==2.90
-pygame==2.1.2
+
+# mediapipe==0.8.3.1
+# opencv-python-headless==4.5.1.48
+# opencv-python==4.5.1.48
+# python-math==0.0.1
+# pyttsx3==2.90
+# pygame==2.1.2
+
