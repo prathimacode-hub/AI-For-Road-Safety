@@ -132,13 +132,13 @@ elif add_selectbox == 'Visualizations':
     st.markdown('<h4>Word Cloud Using 100 Words</h4>', unsafe_allow_html=True)
     st.image("word_cloud_using_100words.png", width=400)
     st.markdown('<h4>Average of Positive & Negative Sentiments Score</h4>', unsafe_allow_html=True)
-    st.image("average_of_positive_negative_sentiment_score.png", width=200)
+    st.image("average_of_positive_negative_sentiment_score.png", width=300)
     st.markdown('<h4>Average of Labels Score</h4>', unsafe_allow_html=True)
-    st.image("average_of_labels_score.png", width=400)
+    st.image("average_of_labels_score.png", width=300)
     st.markdown('<h4>Median Number Of Sentences As Per Labels</h4>', unsafe_allow_html=True)
-    st.image("median_sentences_per_labels.png", width=400)
+    st.image("median_sentences_per_labels.png", width=300)
     st.markdown('<h4>Median Number Of Sentences As Per Labels</h4>', unsafe_allow_html=True)
-    st.image("median_words_per_labels.png", width=400)
+    st.image("median_words_per_labels.png", width=300)
 
    
 elif add_selectbox == 'Conclusion':
@@ -153,7 +153,7 @@ elif add_selectbox == 'Conclusion':
 
     st.subheader('PROJECT SUMMARY')
 
-    st.markdown('', unsafe_allow_html=True) 
+    st.markdown('• ', unsafe_allow_html=True) 
     st.markdown('• ', unsafe_allow_html=True) 
     st.markdown('• ', unsafe_allow_html=True) 
     st.markdown('• ', unsafe_allow_html=True) 
