@@ -5,6 +5,9 @@ Challenge hosted by **Omdena Hyderabad Chapter**
 
 **Original Repo Link** : https://github.com/OmdenaAI/omdena-india-roadsafety
 
+**Final Presentation Link* : https://docs.google.com/presentation/d/1Gk53mIN270ovEqfSlX6FUAC4_ynEWU3hHXVGxUJZtRg/edit?usp=sharing
+
+
 # Streamlit Application :
 
 Demo Link : https://share.streamlit.io/prathimacode-hub/ai-for-road-safety/main/main.py
