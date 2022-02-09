@@ -2,6 +2,7 @@ import streamlit as st
 import base64
 from predict_label import final_prep_prop
 import nltk
+import gensim
 
 nltk.download('punkt')
 nltk.download('wordnet')
