@@ -88,7 +88,7 @@ elif add_selectbox == 'About':
     st.markdown('• Created a NLP model for that generates the Sentiment of a user text and adds a Label that predicts the kind of statement it is using keywords mentioned in the input.',unsafe_allow_html=True)
     st.markdown('• Created a Deep Learning model for driver monitoring system that studies the body movements that drives distraction while driving and signals back with a voice message to provide an alert.',unsafe_allow_html=True)
     st.markdown('• Initialized the Streamlit App and integrated the backend models to the application for users to visualize the analysis and check on with the results of the NLP models.',unsafe_allow_html=True)
-    st.markdown('• Generated a .exe (executable) file for model that depicts eye gaze estimation, drowsiness detection and yawn detection for it to be compiled on a local system directly. ',unsafe_allow_html=True)
+    st.markdown('• Generated a .exe (executable) file for model that depicts Eye Gaze Estimation, Drowsiness Detection and Yawn Detection for it to be compiled on a local system directly. ',unsafe_allow_html=True)
     st.markdown('• Deployed the Streamlit App into Cloud (Docker) by activating and pushing the code sucessfully.',unsafe_allow_html=True)
 
 
@@ -150,17 +150,10 @@ elif add_selectbox == 'Conclusion':
     st.markdown('• NLP Modelling - Label & Sentiment Generator', unsafe_allow_html=True) 
     st.markdown('• Image Classification & Computer Vision Modelling - Eye Gaze Estimation, Drowsiness Detection & Yawn Detection', unsafe_allow_html=True) 
     st.markdown('• Dashboard - Streamlit & Docker', unsafe_allow_html=True) 
-
-    st.subheader('PROJECT SUMMARY')
-
-    st.markdown('• ', unsafe_allow_html=True) 
-    st.markdown('• ', unsafe_allow_html=True) 
-    st.markdown('• ', unsafe_allow_html=True) 
-    st.markdown('• ', unsafe_allow_html=True) 
     
     st.subheader('CONCLUSION')
     
-    st.markdown('', unsafe_allow_html=True)
+    st.markdown('We have created a centralized web application to check on with the activities of the driver in real-time. This would aid in addressing the needs of a road safety arised immediately by instant alerting facility.', unsafe_allow_html=True)
     
     
 elif add_selectbox == 'Team':
@@ -175,17 +168,17 @@ elif add_selectbox == 'Team':
                 unsafe_allow_html=True)
     st.markdown('• <a href="https://www.linkedin.com/in/prathima-kadari/">Prathima Kadari</a>',
                 unsafe_allow_html=True)
+    st.markdown('• <a href="https://www.linkedin.com/in/shreyachawla1998/">Shreya Chawla</a>',
+                unsafe_allow_html=True)
     st.markdown('• <a href="https://www.linkedin.com/in/BhushanChougule/">Bhushan Chougule</a>',
                 unsafe_allow_html=True)
     st.markdown('• <a href="https://www.linkedin.com/in/tanisha-banik-04b511173/">Tanisha Banik</a>',
                 unsafe_allow_html=True)
-    st.markdown('• <a href="https://www.linkedin.com/in/shreyachawla1998/">Shreya Chawla</a>',
-                unsafe_allow_html=True)
-    st.markdown('• <a href="https://www.linkedin.com/in/pawani-morum-42788521/">Pawani Kumari Morum</a>',
-                unsafe_allow_html=True)
     st.markdown('• <a href="https://www.linkedin.com/in/vamsi-chittoor-331b80189/">Chittoor Vamsi</a>',
                 unsafe_allow_html=True)
     st.markdown('• <a href="https://www.linkedin.com/in/viveklalex/">Vivek L. Alex</a>',
+                unsafe_allow_html=True)
+    st.markdown('• <a href="https://www.linkedin.com/in/pawani-morum-42788521/">Pawani Kumari Morum</a>',
                 unsafe_allow_html=True)
     st.markdown('• <a href="https://www.linkedin.com/in/goli-tarun/">Tarun Goli</a>',
                 unsafe_allow_html=True)
@@ -196,5 +189,3 @@ elif add_selectbox == 'Team':
     st.subheader('PROJECT MANAGER')
 
     st.markdown('• <a href="https://www.linkedin.com/in/shaik-muhammad-yahiya/">Muhammad Yahiya</a>', unsafe_allow_html=True)
-            
-   
