@@ -2,7 +2,6 @@ import streamlit as st
 import base64
 from predict_label import final_prep_prop
 import nltk
-import gensim
 
 nltk.download('punkt')
 nltk.download('wordnet')
@@ -119,27 +118,17 @@ elif add_selectbox == 'Natural Language Processing':
             st.write(f"Sentiment of Sentence: {sentiment} and Label of Sentence: {label}")
     else:
         st.write("nothing")
-    
-
-elif add_selectbox == 'Output Visualizations':
-    
-    st.subheader('VISUALIZATIONS')
-    st.markdown('<h4>Analysis of Road Accidents Vs Areas</h4>', unsafe_allow_html=True)
-    st.image("Analysis_Of_Road_Accidents_Vs_Areas.png", width=500)
-    st.markdown('<h4>Road Accidents Word Cloud Image1</h4>', unsafe_allow_html=True)
-    st.image("Road_Accidents_Word_Cloud_1.png", width=500)
-    st.markdown('<h4>Road Accidents Word Cloud Image2</h4>', unsafe_allow_html=True)
-    st.image("Road_Accidents_Word_Cloud_2.png", width=500)
+ 
     
 elif add_selectbox == 'Visualizations':
     
     st.subheader('PROJECT VISUALIZATIONS')
-    st.markdown('<h4>Harmisar Lake</h4>', unsafe_allow_html=True)
-    st.image("hamisar_lake.png", width=400)
-    st.markdown('<h4>Shinai Lake</h4>', unsafe_allow_html=True)
-    st.image("shinai_lake.png", width=400)
-    st.markdown('<h4>Tappar Lake</h4>', unsafe_allow_html=True)
-    st.image("tappar_lake.png", width=400)
+    st.markdown('<h4>Analysis of Road Accidents Vs Areas</h4>', unsafe_allow_html=True)
+    st.image("analysis_of_road_accidents_vs_areas.png", width=400)
+    st.markdown('<h4>Road Accidents Word Cloud Image1</h4>', unsafe_allow_html=True)
+    st.image("road_accidents_word_cloud_1.png", width=400)
+    st.markdown('<h4>Road Accidents Word Cloud Image2</h4>', unsafe_allow_html=True)
+    st.image("road_accidents_word_cloud_2.png", width=400)
 
    
 elif add_selectbox == 'Conclusion':
