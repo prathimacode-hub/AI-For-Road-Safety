@@ -69,8 +69,8 @@ if add_selectbox == 'Home':
     
     st.subheader('PROBLEM STATEMENT')
     
-    st.markdown('', 
-         unsafe_allow_html=True)
+    st.markdown('Each year, more than 1.2 million people die across the globe due to road crashes; there is a pressing need to understand the underlying cause of the problem. The important factors to consider are human errors, driver fatigue, poor traffic sense, mechanical fault of vehicle, speeding and overtaking violation of traffic rules, poor road conditions, traffic congestion and road encroachment. Lack of road safety measures and implementation of road safety laws are major concern in our country.', unsafe_allow_html=True)
+    st.markdown('To improve road safety measures, collecting and analyzing road accidents data can help in addressing this problem and take necessary precautions. Design an AI solution to detect driver’s condition & distractions like drowsiness, yawn and head pose that raise an alert when its detected. The main aim of this project is to help regulatory bodies, policymakers, and people while educating aspiring data scientists in solving real-world problems.', unsafe_allow_html=True)
 
     
 elif add_selectbox == 'About':
@@ -78,15 +78,15 @@ elif add_selectbox == 'About':
     st.subheader('ABOUT THE PROJECT')
 
     st.markdown('<h4>Project Goals</h4>', unsafe_allow_html=True)
-    st.markdown('• Analyzing Road accidents data using Web Scraping from public databases, newspapers, web pages like Google News, Regional and National Newspapers and get a chart of accident prone areas in Hyderabad according to previous stats. etc. 2. Build an AI-Based method based on Machine Learning algorithms & Deep Learning to detect traffic accidents in real-time with the use of traffic cameras with high degrees of precision.', unsafe_allow_html=True) 
-    st.markdown('• Build an NLP model for Label Generator which detects the kind of statement that it is using keywords mentioned in a data and Sentiment Analysis to  ', unsafe_allow_html=True) 
-    st.markdown('• Build a Deep Learning-based solution for the driver monitoring system by studying a person’s posture and body movements, intelligent interior vehicle algorithms which can draw conclusions about a person’s alertness, attention and focus.', unsafe_allow_html=True) 
-    st.markdown('• A Web Application to predict the probability of an accident from input video and actions of the driver.', unsafe_allow_html=True) 
+    st.markdown('• Analyze Road Accidents Data using Web Scraping various sources.', unsafe_allow_html=True) 
+    st.markdown('• Build an NLP model to generate Label and Sentiment Analysis for the user-driven input thats submitted for prediction.', unsafe_allow_html=True) 
+    st.markdown('• Build an AI-based method on Deep Learning & Intelligent Interior Vehicle Algorithms which can draw conclusions about a person’s alertness, attention and focus with high degrees of precision using drivers facial landmarks with webcam input.', unsafe_allow_html=True) 
+    st.markdown('• Create a WebApp using Streamlit & Docker for the Road Safety.', unsafe_allow_html=True) 
     
     st.markdown('<h4>Developments Made</h4>', unsafe_allow_html=True)
     st.markdown('• Analyzed Road accidents data using Web Scraping from public databases, newspapers, web pages like Google News, Regional and National Newspapers and get a chart of accident prone areas in Hyderabad according to previous stats.',unsafe_allow_html=True)
-    st.markdown('• Built an NLP model for that generates the Sentiment of a user text and adds a Label that predicts the kind of statement it is using keywords mentioned in the input.',unsafe_allow_html=True)
-    st.markdown('• Built a Deep Learning model for driver monitoring system that studies the body movements that drives distraction while driving and signals back with a voice message to provide an alert.',unsafe_allow_html=True)
+    st.markdown('• Created a NLP model for that generates the Sentiment of a user text and adds a Label that predicts the kind of statement it is using keywords mentioned in the input.',unsafe_allow_html=True)
+    st.markdown('• Created a Deep Learning model for driver monitoring system that studies the body movements that drives distraction while driving and signals back with a voice message to provide an alert.',unsafe_allow_html=True)
     st.markdown('• Initialized the Streamlit App and integrated the backend models to the application for users to visualize the analysis and check on with the results of the NLP models.',unsafe_allow_html=True)
     st.markdown('• Generated a .exe (executable) file for model that depicts eye gaze estimation, drowsiness detection and yawn detection for it to be compiled on a local system directly. ',unsafe_allow_html=True)
     st.markdown('• Deployed the Streamlit App into Cloud (Docker) by activating and pushing the code sucessfully.',unsafe_allow_html=True)
