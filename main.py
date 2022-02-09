@@ -128,7 +128,17 @@ elif add_selectbox == 'Visualizations':
     st.markdown('<h4>Road Accidents Word Cloud Image1</h4>', unsafe_allow_html=True)
     st.image("road_accidents_word_cloud_1.png", width=400)
     st.markdown('<h4>Road Accidents Word Cloud Image2</h4>', unsafe_allow_html=True)
-    st.image("road_accidents_word_cloud_2.png", width=800)
+    st.image("road_accidents_word_cloud_2.png", width=400)
+    st.markdown('<h4>Word Cloud Using 100 Words</h4>', unsafe_allow_html=True)
+    st.image("word_cloud_using_100words.png", width=400)
+    st.markdown('<h4>Average of Positive & Negative Sentiments Score</h4>', unsafe_allow_html=True)
+    st.image("average_of_positive_negative_sentiment_score.png", width=200)
+    st.markdown('<h4>Average of Labels Score</h4>', unsafe_allow_html=True)
+    st.image("average_of_labels_score.png", width=400)
+    st.markdown('<h4>Median Number Of Sentences As Per Labels</h4>', unsafe_allow_html=True)
+    st.image("median_sentences_per_labels.png", width=400)
+    st.markdown('<h4>Median Number Of Sentences As Per Labels</h4>', unsafe_allow_html=True)
+    st.image("median_words_per_labels.png", width=400)
 
    
 elif add_selectbox == 'Conclusion':
