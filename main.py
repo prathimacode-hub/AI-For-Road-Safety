@@ -139,6 +139,8 @@ elif add_selectbox == 'Visualizations':
     st.image("median_sentences_per_labels.png", width=300)
     st.markdown('<h4>Median Number Of Sentences As Per Labels</h4>', unsafe_allow_html=True)
     st.image("median_words_per_labels.png", width=300)
+    st.markdown('<h4>Facial Landmarks Model Points</h4>', unsafe_allow_html=True)
+    st.image("facial_landmarks_model_visualization.png", width=400)
 
    
 elif add_selectbox == 'Conclusion':
