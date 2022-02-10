@@ -22,7 +22,7 @@ statsmodels==0.10.2
 nltk==3.2.5
 gensim==3.6.0
 
-#libraries for Head pose estimation and gaze detection
+# Libraries for Head pose estimation and gaze detection
 
 # mediapipe==0.8.3.1
 # opencv-python-headless==4.5.1.48
@@ -31,3 +31,8 @@ gensim==3.6.0
 # pyttsx3==2.90
 # pygame==2.1.2
 
+# Libraries for object detection
+
+tensorflow==2.4.0
+imageai==2.1.6
+opencv-python==4.5.1.48
