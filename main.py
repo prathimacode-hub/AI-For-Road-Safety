@@ -129,7 +129,7 @@ elif add_selectbox == 'Computer Vision':
     
     st.subheader('OBJECT DETECTION')    
     
-    def detect_text(file, output_name):
+    def detect_object(file, output_name):
         detector = VideoObjectDetection()
         detector.setModelTypeAsYOLOv3()
         detector.setModelPath("yolo.h5")
@@ -140,7 +140,7 @@ elif add_selectbox == 'Computer Vision':
                                     frames_per_second=29, log_progress=True)
         return video_path
 
-    def file_selector(folder_path=os.getcwd()):
+    def select_file(folder_path=os.getcwd()):
         filenames = os.listdir(folder_path)
         file_format = []
         for file in filenames:
@@ -152,14 +152,14 @@ elif add_selectbox == 'Computer Vision':
     home = os.getcwd()
     opener ="open" if sys.platform == "darwin" else "xdg-open"
 
-    filename = file_selector()
+    filename = select_file()
     st.write('You selected `%s`' % filename)
     if st.button('View video'):
         subprocess.call([opener, filename])
     
-    if st.button('Detect objects and see output'):
+    if st.button('Detect Objects and See Output'):
         with st.spinner('Processing'):
-            output = detect_text(filename, 'output-1')
+            output = detect_object(filename, 'final-output')
         st.success('Done! Waiting for the output file to open')
         time.sleep(1)
         subprocess.call([opener, output])
