@@ -2,6 +2,13 @@ import streamlit as st
 import base64
 from predict_label import final_prep_prop
 import nltk
+import time
+import io
+import tempfile, sqlite3
+import os 
+import cv2
+import subprocess, sys
+from imageai.Detection import VideoObjectDetection
 
 nltk.download('punkt')
 nltk.download('wordnet')
@@ -102,7 +109,7 @@ elif add_selectbox == 'Features':
     
 elif add_selectbox == 'Natural Language Processing':   
     
-    st.subheader('LABEL & SENTIMENT GENERATOR ')    
+    st.subheader('LABEL & SENTIMENT GENERATOR')    
     area = st.text_input('Enter the Text here (more than 3 words)', '#India has the largest number of ppl dying in road accidents. That + 99 more things to debate before we vote http://t.co/zkxbONv850')
 
     if st.button('submit'):
@@ -116,7 +123,47 @@ elif add_selectbox == 'Natural Language Processing':
             st.write(f"Sentiment of Sentence: {sentiment} and Label of Sentence: {label}")
     else:
         st.write("nothing")
- 
+        
+        
+elif add_selectbox == 'Computer Vision':
+    
+    st.subheader('OBJECT DETECTION')    
+    
+    def detect_text(file, output_name):
+        detector = VideoObjectDetection()
+        detector.setModelTypeAsYOLOv3()
+        detector.setModelPath("yolo.h5")
+        detector.loadModel()
+        
+        video_path = detector.detectObjectsFromVideo(input_file_path= file,
+                                    output_file_path= output_name, 
+                                    frames_per_second=29, log_progress=True)
+        return video_path
+
+    def file_selector(folder_path=os.getcwd()):
+        filenames = os.listdir(folder_path)
+        file_format = []
+        for file in filenames:
+            if file[-3:] == 'mp4':
+                file_format.append(file)
+        selected_filename = st.selectbox('Select a video', file_format)
+        return os.path.join(folder_path, selected_filename)
+    
+    home = os.getcwd()
+    opener ="open" if sys.platform == "darwin" else "xdg-open"
+
+    filename = file_selector()
+    st.write('You selected `%s`' % filename)
+    if st.button('View video'):
+        subprocess.call([opener, filename])
+    
+    if st.button('Detect objects and see output'):
+        with st.spinner('Processing'):
+            output = detect_text(filename, 'output-1')
+        st.success('Done! Waiting for the output file to open')
+        time.sleep(1)
+        subprocess.call([opener, output])
+
     
 elif add_selectbox == 'Visualizations':
     
