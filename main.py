@@ -8,7 +8,7 @@ import tempfile, sqlite3
 import os 
 #import cv2
 import subprocess, sys
-from imageai.Detection import VideoObjectDetection
+from imageai.Detection import ObjectDetection
 
 nltk.download('punkt')
 nltk.download('wordnet')
@@ -130,7 +130,7 @@ elif add_selectbox == 'Computer Vision':
     st.subheader('OBJECT DETECTION')    
     
     def detect_object(file, output_name):
-        detector = ImageObjectDetection()
+        detector = ObjectDetection()
         detector.setModelTypeAsYOLOv3()
         detector.setModelPath("yolo.h5")
         detector.loadModel()
