@@ -130,12 +130,12 @@ elif add_selectbox == 'Computer Vision':
     st.subheader('OBJECT DETECTION')    
     
     def detect_object(file, output_name):
-        detector = VideoObjectDetection()
+        detector = ImageObjectDetection()
         detector.setModelTypeAsYOLOv3()
         detector.setModelPath("yolo.h5")
         detector.loadModel()
         
-        video_path = detector.detectObjectsFromVideo(input_file_path= file,
+        video_path = detector.detectObjectsFromImage(input_file_path= file,
                                     output_file_path= output_name, 
                                     frames_per_second=29, log_progress=True)
         return video_path
@@ -144,9 +144,9 @@ elif add_selectbox == 'Computer Vision':
         filenames = os.listdir(folder_path)
         file_format = []
         for file in filenames:
-            if file[-3:] == 'mp4':
+            if file[-3:] == 'jpg':
                 file_format.append(file)
-        selected_filename = st.selectbox('Select a video', file_format)
+        selected_filename = st.selectbox('Select a image', file_format)
         return os.path.join(folder_path, selected_filename)
     
     home = os.getcwd()
@@ -154,7 +154,7 @@ elif add_selectbox == 'Computer Vision':
 
     filename = select_file()
     st.write('You selected `%s`' % filename)
-    if st.button('View video'):
+    if st.button('View Image'):
         subprocess.call([opener, filename])
     
     if st.button('Detect Objects and See Output'):
