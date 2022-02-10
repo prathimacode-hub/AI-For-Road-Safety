@@ -6,7 +6,7 @@ import time
 import io
 import tempfile, sqlite3
 import os 
-import cv2
+#import cv2
 import subprocess, sys
 from imageai.Detection import VideoObjectDetection
 
