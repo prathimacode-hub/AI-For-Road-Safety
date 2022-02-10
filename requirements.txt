@@ -37,3 +37,4 @@ gensim==3.6.0
 tensorflow==2.4.0
 imageai==2.1.6
 opencv-python==4.5.1.48
+opencv-python-headless==4.5.1.48
