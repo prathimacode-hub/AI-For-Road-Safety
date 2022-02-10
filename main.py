@@ -69,7 +69,7 @@ if add_selectbox == 'Home':
     
     st.subheader('PROBLEM STATEMENT')
     
-    st.markdown('Each year, more than 1.2 million people die across the globe due to road crashes; there is a pressing need to understand the underlying cause of the problem. The important factors to consider are human errors, driver fatigue, poor traffic sense, mechanical fault of vehicle, speeding and overtaking violation of traffic rules, poor road conditions, traffic congestion and road encroachment. Lack of road safety measures and implementation of road safety laws are major concern in our country.', unsafe_allow_html=True)
+    st.markdown('Each year, more than 1.2 million people die across the globe due to road crashes; there is a pressing need to understand the underlying cause of the problem. The important factors to consider are human errors, driver fatigue, poor traffic sense, mechanical fault of vehicle, speeding and overtaking violation of traffic rules, poor road conditions, traffic congestion and road encroachment. Lack of road safety measures and implementation of road safety laws are major concerns in our country.', unsafe_allow_html=True)
     st.markdown('To improve road safety measures, collecting and analyzing road accidents data can help in addressing this problem and take necessary precautions. Design an AI solution to detect driver’s condition & distractions like drowsiness, yawn and head pose that raise an alert when its detected. The main aim of this project is to help regulatory bodies, policymakers, and people while educating aspiring data scientists in solving real-world problems.', unsafe_allow_html=True)
 
     
@@ -135,9 +135,9 @@ elif add_selectbox == 'Visualizations':
     st.image("average_of_labels_score.png", width=400)
     st.markdown('<h4>Median Number Of Sentences As Per Labels</h4>', unsafe_allow_html=True)
     st.image("median_sentences_per_labels.png", width=400)
-    st.markdown('<h4>Median Number Of Sentences As Per Labels</h4>', unsafe_allow_html=True)
+    st.markdown('<h4>Median Number Of Words As Per Labels</h4>', unsafe_allow_html=True)
     st.image("median_words_per_labels.png", width=400)
-    st.markdown('<h4>Facial Landmarks Model Points</h4>', unsafe_allow_html=True)
+    st.markdown('<h4>Facial Landmarks Points</h4>', unsafe_allow_html=True)
     st.image("facial_landmarks_model_visualization.png", width=400)
 
    
