@@ -125,44 +125,44 @@ elif add_selectbox == 'Natural Language Processing':
         st.write("nothing")
         
         
-elif add_selectbox == 'Computer Vision':
+# elif add_selectbox == 'Computer Vision':
     
-    st.subheader('OBJECT DETECTION')    
+#     st.subheader('OBJECT DETECTION')    
     
-    def detect_object(file, output_name):
-        detector = ObjectDetection()
-        detector.setModelTypeAsYOLOv3()
-        detector.setModelPath("yolo.h5")
-        detector.loadModel()
+#     def detect_object(file, output_name):
+#         detector = ObjectDetection()
+#         detector.setModelTypeAsYOLOv3()
+#         detector.setModelPath("yolo.h5")
+#         detector.loadModel()
         
-        video_path = detector.detectObjectsFromImage(input_file_path= file,
-                                    output_file_path= output_name, 
-                                    frames_per_second=29, log_progress=True)
-        return video_path
+#         video_path = detector.detectObjectsFromImage(input_file_path= file,
+#                                     output_file_path= output_name, 
+#                                     frames_per_second=29, log_progress=True)
+#         return video_path
 
-    def select_file(folder_path=os.getcwd()):
-        filenames = os.listdir(folder_path)
-        file_format = []
-        for file in filenames:
-            if file[-3:] == 'jpg':
-                file_format.append(file)
-        selected_filename = st.selectbox('Select a image', file_format)
-        return os.path.join(folder_path, selected_filename)
+#     def select_file(folder_path=os.getcwd()):
+#         filenames = os.listdir(folder_path)
+#         file_format = []
+#         for file in filenames:
+#             if file[-3:] == 'jpg':
+#                 file_format.append(file)
+#         selected_filename = st.selectbox('Select a image', file_format)
+#         return os.path.join(folder_path, selected_filename)
     
-    home = os.getcwd()
-    opener ="open" if sys.platform == "darwin" else "xdg-open"
+#     home = os.getcwd()
+#     opener ="open" if sys.platform == "darwin" else "xdg-open"
 
-    filename = select_file()
-    st.write('You selected `%s`' % filename)
-    if st.button('View Image'):
-        subprocess.call([opener, filename])
+#     filename = select_file()
+#     st.write('You selected `%s`' % filename)
+#     if st.button('View Image'):
+#         subprocess.call([opener, filename])
     
-    if st.button('Detect Objects and See Output'):
-        with st.spinner('Processing'):
-            output = detect_object(filename, 'final-output')
-        st.success('Done! Waiting for the output file to open')
-        time.sleep(1)
-        subprocess.call([opener, output])
+#     if st.button('Detect Objects and See Output'):
+#         with st.spinner('Processing'):
+#             output = detect_object(filename, 'final-output')
+#         st.success('Done! Waiting for the output file to open')
+#         time.sleep(1)
+#         subprocess.call([opener, output])
 
     
 elif add_selectbox == 'Visualizations':
