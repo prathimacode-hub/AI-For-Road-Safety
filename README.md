@@ -48,4 +48,4 @@ Label & Sentiment Generator - Check out this application through Streamlit Demo 
 
 Eye Gaze Estimation + Drowsiness Detection + Yawn Detection
 
-This application doesn't support Streamlit, hence it can compiled directly on Local Drive using generated [Driver Attention Estimation .exe file](https://drive.google.com/drive/folders/1cGs5Inm8AaTxmG9Ad6-lX6X_5CWBq7Zx) file uploaded in the drive.
+This application doesn't support Streamlit, hence it can compiled directly on Local Drive using generated [Driver Attention Estimation .exe file](https://drive.google.com/drive/folders/1cGs5Inm8AaTxmG9Ad6-lX6X_5CWBq7Zx) files uploaded in the drive.
