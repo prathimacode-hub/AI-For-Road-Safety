@@ -22,6 +22,7 @@ spacy==2.2.4
 statsmodels==0.10.2
 nltk==3.2.5
 gensim==3.6.0
+jinja2==3.1.2
 
 # Libraries for Head pose estimation and gaze detection
 
