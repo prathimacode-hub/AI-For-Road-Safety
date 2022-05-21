@@ -35,7 +35,7 @@ jinja2==2.10.1
 
 # Libraries for object detection
 
-tensorflow==2.5.0
-imageai==2.1.6
+#tensorflow==2.5.0
+#imageai==2.1.6
 opencv-python==4.5.1.48
 opencv-python-headless==4.5.1.48
